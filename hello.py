@@ -1,11 +1,13 @@
+""" docString documentation """
+
 from flask import Flask
-app = Flask(__name__)
-""" hello docString """ 
-@app.route("/")
+
+APP = Flask(__name__)
+
+@APP.route("/")
 def hello():
     """ hello function """
     return "Hello World!"
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
-
+    APP.run(host="0.0.0.0")
